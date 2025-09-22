@@ -10,17 +10,27 @@
       href="https://fonts.googleapis.com/css2?family=Imperial+Script&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./styles.style.css" />
+    <link rel="stylesheet" href="styles/style.css" />
   </head>
   <body>
-    <div class="container">
-      <h1>TO DO LIST</h1>
-      <div class="input-container">
-        <input type="text" id="task-input" placeholder="Add a new task..." />
-        <button id="add-task-button">Add Task</button>
+    <div class="app-container">
+      <div class="h1-container">
+        <h1>TO-DO Lists</h1>
       </div>
-      <ul id="task-list"></ul>
+
+      <form id="new-list-form" class="new-list-form">
+        <input
+          type="text"
+          id="new-list-input"
+          placeholder="New List Name"
+          required
+        />
+        <button type="submit">Add List</button>
+      </form>
+
+      <section id="lists-wrapper" class="lists-wrapper"></section>
     </div>
-    <script src="./script/script.js"></script>
+
+    <script src="script/script.js"></script>
   </body>
 </html>

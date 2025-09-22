@@ -1,0 +1,48 @@
+@import "./body.css";
+
+.lists-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.list-box {
+  background: #fff;
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 10px;
+  width: 250px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.task-form input {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.task-form button {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.remove-list-btn {
+  background-color: #ffdddd;
+  color: #000;
+  border: none;
+  padding: 6px;
+  cursor: pointer;
+  width: 100%;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 5px 0;
+}
