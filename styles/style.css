@@ -55,7 +55,7 @@ li span {
   /* займає вільний простір */
   display: inline-block;
   /* щоб текст ішов у рядок */
-  white-space: normal;
+  white-space: nowrap;
   /* дозволяє переносити */
   /* word-break: break-word; */
   /* переносить довгі слова */
@@ -69,4 +69,11 @@ button.delete-task {
   width: 32px;
   height: 32px;
   font-size: 18px;
+}
+input, button, select {
+  max-width: 100%;   /* щоб не розтягували контейнер */
+}
+img {
+  max-width: 100%;
+  height: auto;
 }
