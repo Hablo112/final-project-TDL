@@ -45,9 +45,25 @@ li {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 5px 0;
   gap: 8px;
   margin: 5px 0;
-  overflow: hidden;
   max-width: 100%;
+}
+
+li span {
+  flex-grow: 1;
+  /* займає доступне місце */
+  white-space: normal;
+  /* дозволяє переносити текст */
+  word-break: break-word;
+  /* переносить довгі слова */
+  font-size: 16px;
+  color: #333;
+  /* зроби темнішим, щоб було видно */
+}
+button.delete-task {
+  flex-shrink: 0;     /* не стискається */
+  width: 32px;
+  height: 32px;
+  font-size: 18px;
 }
