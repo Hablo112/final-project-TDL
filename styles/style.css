@@ -57,7 +57,7 @@ li span {
   /* щоб текст ішов у рядок */
   white-space: normal;
   /* дозволяє переносити */
-  word-break: break-word;
+  /* word-break: break-word; */
   /* переносить довгі слова */
   font-size: 16px;
   color: #333;
